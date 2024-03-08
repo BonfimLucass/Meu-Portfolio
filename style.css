@@ -170,6 +170,17 @@ section.especialidades .flex{
 
 /* PARTE DO SOBRE  */
 
+.interface .img-sobre img{
+    border-radius: 8px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.interface .img-sobre img:hover{
+    box-shadow: 0 0 20px #5c5c5c;
+    transform: scale(1.01);
+}
+
 section.sobre {
     padding: 100px 4%;
 }
