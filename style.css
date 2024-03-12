@@ -10,7 +10,6 @@
 body {
     background-color: black;
     height: 100vh;
-
 }
 
 .interface{
@@ -67,7 +66,6 @@ header a{
     list-style-type: none;
     display: inline-block;
     text-decoration: none;
-
 }
 
 header nav.menu-desktop a:hover{
@@ -80,10 +78,15 @@ header nav ul{
 }
 header nav.menu-desktop ul li{
     display: inline-block;
-    padding: 0 40px;
+    padding: 0 20px;
 }
 
 /* ESTILO MENU MOBILE */
+
+.btn-abrir-menu{
+    display: none;
+}
+
 .btn-abrir-menu i{
     color: white;
     font-size: 40px;
@@ -95,7 +98,7 @@ header nav.menu-desktop ul li{
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 9999;
+    z-index: 99999;
     width: 0%;
     overflow: hidden;
     transition: .2s;
@@ -141,7 +144,7 @@ header nav.menu-desktop ul li{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 8888;
+    z-index: 88888;
     display: none;
 }
 
@@ -363,6 +366,11 @@ footer .line-footer p a{
 /* RESPONSIVO */
 
 @media screen and (max-width: 1020px){
+    
+    .menu-desktop, .vtr-contato{
+        display: none;
+    }
+
     .flex{
         flex-direction: column;
     }
@@ -375,10 +383,9 @@ footer .line-footer p a{
         flex-direction: column-reverse;
     }
 
-    .menu-desktop, .vtr-contato{
-        display: none;
+    .btn-abrir-menu{
+        display: block;
     }
-
 
         /* TOPO DO SITE */
     
