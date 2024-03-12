@@ -13,6 +13,8 @@
     <!--icons boot-->
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -25,20 +27,39 @@
 
             <nav class="menu-desktop">
                 <ul>
-                    <li>
-                        <a href="#">Inicio</a>
-                        <a href="#">Especialidades</a>
-                        <a href="#">Sobre</a>
-                        <a href="#">Projetos</a>
-                    </li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Especialidades</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Projetos</a></li>
                 </ul>
             </nav>
             <div class="vtr-contato">
                 <a href="#">
                     <button> Contato</button>
                 </a>
+            </div><!--CONTATO-->
 
+            <div class="btn-abrir-menu">
+                <i class="bi bi-list"></i>
             </div>
+
+            <!--Menu Mobile-->
+            <div class="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Especialidades</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Projetos</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+            </div><!--menu mobile-->
+            <div class="overlay-mobile"></div>
         </div> <!--interface-->
     </header>
     <main>
@@ -161,6 +182,5 @@
 
     </main>
 
-    <script src="script.js"></script>
 </body>
 </html>
